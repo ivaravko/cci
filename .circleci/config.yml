@@ -8,4 +8,6 @@ jobs:
     working_directory: /go/src/github.com/ivaravko/cci
 
     steps:
+      - checkout
+      - run: go get
       - run: go build
